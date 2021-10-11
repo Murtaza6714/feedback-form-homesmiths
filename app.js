@@ -4,15 +4,7 @@ const path = require("path");
 const app = express();
 const { config } = require("./config");
 var Connection = require("tedious").Connection;
-const sql = require("mssql");
-var Request = require("tedious").Request;
-var TYPES = require("tedious").TYPES;
-const unirest = require("unirest");
-const request = require("request");
 const axios = require("axios");
-const navigator = require("navigator");
-const http = require("https");
-const dns = require("dns");
 require("dotenv").config();
 const inputParameters = require('./inputParameters')
 
@@ -48,9 +40,6 @@ app.post("/homesmiths-feedback-form", async (req, res, next) => {
     hidden
   } = req.body;
   console.log(req.body);
-  console.log(navigator.geolocation);
-  console.log("ip", req.socket.remoteAddress);
-  console.log('hidden', hidden);
   const options = {
     method: "GET",
     url: "https://ip-geolocation-ipwhois-io.p.rapidapi.com/json/",
