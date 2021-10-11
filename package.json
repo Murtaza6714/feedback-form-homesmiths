@@ -1,0 +1,27 @@
+{
+  "name": "feedback-form-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.22.0",
+    "body-parser": "^1.19.0",
+    "dns": "^0.2.2",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "mssql": "^7.2.1",
+    "navigator": "^1.0.1",
+    "nodemon": "^2.0.13",
+    "request": "^2.88.2",
+    "tedious": "^13.1.0",
+    "unirest": "^0.6.0"
+  }
+}

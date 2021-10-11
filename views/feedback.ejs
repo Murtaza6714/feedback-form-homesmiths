@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Colorlib Templates" />
+    <meta name="author" content="Colorlib" />
+    <meta name="keywords" content="Colorlib Templates" />
+
+    <!-- Title Page-->
+    <title><%= title %></title>
+
+    <!-- Icons font CSS-->
+    <link
+      href="/vendor/mdi-font/css/material-design-iconic-font.min.css"
+      rel="stylesheet"
+      media="all"
+    />
+    <link
+      href="/vendor/font-awesome-4.7/css/font-awesome.min.css"
+      rel="stylesheet"
+      media="all"
+    />
+    <!-- Font special for pages-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS-->
+    <link href="/vendor/select2/select2.min.css" rel="stylesheet" media="all" />
+    <link
+      href="/vendor/datepicker/daterangepicker.css"
+      rel="stylesheet"
+      media="all"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"
+        integrity="sha512-DNeDhsl+FWnx5B1EQzsayHMyP6Xl/Mg+vcnFPXGNjUZrW28hQaa1+A4qL9M+AiOMmkAhKAWYHh1a+t6qxthzUw=="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
+        integrity="sha512-yye/u0ehQsrVrfSd6biT17t39Rg9kNc+vENcCXZuMz2a+LWFGvXUnYuWUW6pbfYj1jcBb/C39UZw2ciQvwDDvg=="
+        crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+        integrity="sha512-BNZ1x39RMH+UYylOW419beaGO0wqdSkO7pi1rYDYco9OL3uvXaC/GTqA5O4CVK2j4K9ZkoDNSSHVkEQKkgwdiw=="
+        crossorigin="anonymous"></script>
+
+    <!-- Main CSS-->
+    <link href="/css/main.css" rel="stylesheet" media="all" />
+    <script>
+      navigator.geolocation.getCurrentPosition(success, error);
+      function success(result) {
+        console.log("latitude", result, result.coords);
+      }
+      function error(err) {
+        console.log(err);
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- <div class="page-wrapper bg-grey p-t-100 p-b-100 font-robo"> -->
+    <div class="wrapper wrapper--w680">
+      <div class="card card-1">
+        <div class="card-heading"></div>
+        <div class="card-body">
+          <!-- <h2 class="title">Registration Info</h2> -->
+          <div style="text-align: left; margin-bottom: 20px; margin-top: -60px">
+            <em>Dear valued costumer,</em><br />
+            <em>Thank you for choosing Homesmiths Dubai to heart your home.</em
+            ><br />
+            <em>We'd love to know a bit more about your experience with us.</em>
+          </div>
+
+          <form method="POST">
+            <div class="input-group">
+              <input
+                class="input--style-1"
+                type="text"
+                placeholder="NAME"
+                name="name"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <input
+                class="input--style-1"
+                type="text"
+                placeholder="PHONE"
+                name="mobileNo"
+                id="phone"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <input
+                class="input--style-1"
+                type="email"
+                placeholder="EMAIL"
+                name="email"
+                required
+              />
+            </div>
+            <h3 class="title">Products</h3>
+            <div>
+              <p>1. How would describe your experience in our store?</p>
+              <br /><label for="experienceBadly" class="radio">
+                <input
+                  type="radio"
+                  value="Badly"
+                  name="experience"
+                  id="experienceBadly"
+                  class="radio__input"
+                  required
+                />
+                <div class="radio__radio"></div>
+                Badly
+              </label>
+              <br />
+              <label for="experienceFine" class="radio">
+                <input
+                  type="radio"
+                  value="Fine"
+                  name="experience"
+                  id="experienceFine"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+                Fine
+              </label>
+              <br /><label for="experienceGreat" class="radio">
+                <input
+                  type="radio"
+                  value="Great"
+                  name="experience"
+                  id="experienceGreat"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+                Great
+              </label>
+              <br /><label for="experienceLifeSaving" class="radio">
+                <input
+                  type="radio"
+                  value="Life Saving"
+                  name="experience"
+                  id="experienceLifeSaving"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+                Life Saving
+              </label>
+              <br />
+            </div>
+            <br />
+            <hr />
+            <br />
+            <div>
+              <p>2. How well does our product meet your needs?</p>
+              <br /><label for="needsBadly" class="radio">
+                <input
+                  type="radio"
+                  value="Badly"
+                  name="needs"
+                  id="needsBadly"
+                  class="radio__input"
+                  required
+                />
+                <div class="radio__radio"></div>
+                Badly
+              </label>
+              <br />
+              <label for="needsFine" class="radio">
+                <input
+                  type="radio"
+                  value="Fine"
+                  name="needs"
+                  id="needsFine"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+                Fine
+              </label>
+              <br /><label for="needsGreat" class="radio">
+                <input
+                  type="radio"
+                  value="Great"
+                  name="needs"
+                  id="needsGreat"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+                Great
+              </label>
+              <br /><label for="needsVeryWell" class="radio">
+                <input
+                  type="radio"
+                  value="Very Well"
+                  name="needs"
+                  id="needsVeryWell"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+                Very Well
+              </label>
+              <br />
+            </div>
+            <br />
+            <hr />
+            <br />
+
+            <div>
+              <p>
+                3. How easy was it for you to find the products you wanted in
+                our shop?
+              </p>
+              <br /><label for="findBadly" class="radio">
+                <input
+                  type="radio"
+                  value="Badly"
+                  name="find"
+                  id="findBadly"
+                  class="radio__input"
+                  required
+                />
+                <div class="radio__radio"></div>
+                Badly
+              </label>
+              <br />
+              <label for="findFine" class="radio">
+                <input
+                  type="radio"
+                  value="Fine"
+                  name="find"
+                  id="findFine"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+                Fine
+              </label>
+              <br /><label for="findGreat" class="radio">
+                <input
+                  type="radio"
+                  value="Easy"
+                  name="find"
+                  id="findGreat"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+                Easy
+              </label>
+              <br /><label for="findVeryEasy" class="radio">
+                <input
+                  type="radio"
+                  value="Very Easy"
+                  name="find"
+                  id="findVeryEasy"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+                Very Easy
+              </label>
+              <br />
+            </div>
+            <br />
+            <hr />
+            <br />
+
+            <div>
+              <p>
+                4. Were our store staff friendly, helpful and knowledgeable?
+              </p>
+              <br /><label for="friendlyYes" class="radio">
+                <input
+                  type="radio"
+                  value="Yes"
+                  name="friendly"
+                  id="friendlyYes"
+                  class="radio__input"
+                  required
+                />
+                <div class="radio__radio"></div>
+                Yes
+              </label>
+              <br />
+              <label for="friendlyNo" class="radio">
+                <input
+                  type="radio"
+                  value="No"
+                  name="friendly"
+                  id="friendlyNo"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+                No
+              </label>
+              <br />
+            </div>
+            <br />
+            <hr />
+            <br />
+
+            <div>
+              <p>
+                5. How would you rate our ability to satisfactorily deal with
+                customer questions?
+              </p>
+              <br /><label for="abilityPoor" class="radio">
+                <input
+                  type="radio"
+                  value="Poor"
+                  name="ability"
+                  id="abilityPoor"
+                  class="radio__input"
+                  required
+                />
+                <div class="radio__radio"></div>
+                Poor
+              </label>
+              <br />
+              <label for="abilitySomewhatPoor" class="radio">
+                <input
+                  type="radio"
+                  value="Somewhat Poor"
+                  name="ability"
+                  id="abilitySomewhatPoor"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+                Somewhat Poor
+              </label>
+              <br /><label for="abilityExcellent" class="radio">
+                <input
+                  type="radio"
+                  value="Excellent"
+                  name="ability"
+                  id="abilityExcellent"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+                Excellent
+              </label>
+              <br /><label for="abilityVeryExcellent" class="radio">
+                <input
+                  type="radio"
+                  value="Very Excellent"
+                  name="ability"
+                  id="abilityVeryExcellent"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+                Very Excellent
+              </label>
+              <br />
+            </div>
+
+            <div class="p-t-20">
+              <button class="btn btn--radius btn--green" type="submit">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <input type="hidden" name="hidden" id="hid">
+    <!-- </div> -->
+
+    <!-- Jquery JS-->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="/vendor/select2/select2.min.js"></script>
+    <script src="/vendor/datepicker/moment.min.js"></script>
+    <script src="/vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="/js/global.js"></script>
+    <script>
+      var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      preferredCountries: ["ae" ,"us", "in"],
+        separateDialCode: true,
+        customPlaceholder: function (
+            selectedCountryPlaceholder,
+            selectedCountryData
+        ) {
+          console.log(selectedCountryPlaceholder, selectedCountryData);
+            document.getElementById("hid").value = selectedCountryPlaceholder
+        },
+    });
+    </script>
+  </body>
+  <!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
+<!-- end document-->
