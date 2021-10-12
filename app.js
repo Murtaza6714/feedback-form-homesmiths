@@ -7,7 +7,7 @@ var Connection = require("tedious").Connection;
 const axios = require("axios");
 require("dotenv").config();
 const inputParameters = require('./inputParameters')
-
+let port = process.env.PORT || 3000
 app.set("view engine", "ejs");
 app.set("views", "views");
 
@@ -91,7 +91,7 @@ app.get("/thank-you", (req, res, next) => {
   });
 });
 
-app.listen(3000, (err) => {
+app.listen(port, (err) => {
   if (err) {
     console.log(err);
   }
