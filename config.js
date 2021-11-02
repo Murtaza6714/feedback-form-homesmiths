@@ -1,6 +1,5 @@
 require('dotenv').config()
 
-
 exports.config = {
     server: process.env.SERVER,  
         authentication: {

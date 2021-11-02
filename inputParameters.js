@@ -1,21 +1,10 @@
 var Request = require("tedious").Request;
 var TYPES = require("tedious").TYPES;
 
-module.exports = (
-  sr,
-  name,
-  mobileNo,
-  email,
-  experience,
-  needs,
-  find,
-  friendly,
-  ability,
-  connection
-) => {
+module.exports = ( sr, name, mobileNo, email, experience, needs, find, friendly, ability, connection, myIp) => {
   // Values contain variables idicated by '@' sign
-  const sql = `INSERT INTO feedback (SR_NO, NAME, MOBILE, EMAIL, EXPERIENCE, NEEDS, FIND, FRIENDLY, ABILITY) 
-          VALUES (@srNo, @name, @mobile, @email, @experience, @needs, @find, @friendly, @ability)`;
+  const sql = `INSERT INTO feedback (SR_NO, NAME, MOBILE, EMAIL, EXPERIENCE, NEEDS, FIND, FRIENDLY, ABILITY, IP_ADDRESS) 
+          VALUES (@srNo, @name, @mobile, @email, @experience, @needs, @find, @friendly, @ability, @myIp)`;
   const request = new Request(sql, (err, rowCount) => {
     if (err) {
       throw err;
@@ -35,6 +24,6 @@ module.exports = (
   request.addParameter("find", TYPES.NVarChar, find);
   request.addParameter("friendly", TYPES.NVarChar, friendly);
   request.addParameter("ability", TYPES.NVarChar, ability);
-  console.log(sr);
+  request.addParameter("myIp", TYPES.NVarChar, myIp);
   connection.execSql(request);
 };
