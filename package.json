@@ -18,6 +18,7 @@
     "express": "^4.17.1",
     "http": "0.0.1-security",
     "ipware": "^2.0.0",
+    "moment": "^2.29.1",
     "mssql": "^7.2.1",
     "navigator": "^1.0.1",
     "nodemon": "^2.0.13",
