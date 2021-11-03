@@ -36,7 +36,7 @@ app.post("/homesmiths-feedback-form", async (req, res, next) => {
   
   // Connecion with database sql
   const myIp = req.ip
-  const dateTimeNow = getDateTime(new Date())
+  const dateTimeNow = await getDateTime(new Date())
   var connection = new Connection(config);
   connection.on("connect", async function (err) {
     // If no error, then good to proceed.
