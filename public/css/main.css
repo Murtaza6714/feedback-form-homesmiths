@@ -462,7 +462,9 @@ input {
 
 .card-1 .card-heading {
   background: url("../images/0001.jpg") center center/cover no-repeat;
-  padding-top: 170px;
+  padding-top: 140px;
+  max-width: 60%;
+  margin: 0 auto;
 }
 
 .card-1 .card-body {
