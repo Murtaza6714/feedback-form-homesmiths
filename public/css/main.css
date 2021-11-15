@@ -462,14 +462,14 @@ input {
 
 .card-123 .card-header {
   background: url("../images/0001.jpg") center center/cover no-repeat;
-  padding-top: 140px;
-  max-width: 60%;
+  padding-top: 110px;
+  max-width: 65%;
   margin: 0 auto;
 }
 
 .card-123 .card-bodies {
   padding: 0 90px;
-  padding-top: 55px;
+  padding-top: 35px;
   padding-bottom: 65px;
 }
 
@@ -491,7 +491,7 @@ input {
   border: 2px solid #d8e4e2;
   border-radius: 50%;
   margin-right: 5px;
-  margin-left: 30px;
+  margin-left: 40px;
   box-sizing: border-box;
   padding: 2px;
 }
@@ -536,8 +536,21 @@ input {
   font-family: 'Pluto';
 }
 
+.expanded-bg {
+  width: 500%;
+  margin-left: -200%;
+  background-color:#F0AB00;
+  padding: 20px 0;
+}
+
 ::placeholder {
   font-family: 'Pluto';
+  
+}
+
+.font-color-option {
+  font-size: smaller;
+  color: rgb(168, 165, 177);
 }
 
 @media (max-width: 767px) {
