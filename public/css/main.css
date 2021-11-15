@@ -511,6 +511,35 @@ input {
   transform: scale(1);
 }
 
+@font-face {
+  font-family: 'Pluto Thin';
+  src: url('PlutoThin.eot');
+  src: url('PlutoThin.eot?#iefix') format('embedded-opentype'),
+  url('PlutoThin.woff') format('woff'),
+  url('PlutoThin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Pluto';
+    src: url('PlutoRegular.eot');
+    src: local('../plutoFont/Pluto Regular'), local('PlutoRegular'),
+        url('../plutoFont/PlutoRegular.eot?#iefix') format('embedded-opentype'),
+        url('../plutoFont/PlutoRegular.woff') format('woff'),
+        url('../plutoFont/PlutoRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.my-font {
+  font-family: 'Pluto';
+}
+
+::placeholder {
+  font-family: 'Pluto';
+}
+
 @media (max-width: 767px) {
   .card-123 .card-bodies {
     padding: 0 40px;
