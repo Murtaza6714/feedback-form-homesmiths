@@ -32,6 +32,7 @@ app.get("/homesmiths-feedback-form", (req, res, next) => {
 
 app.post("/homesmiths-feedback-form", async (req, res, next) => {
   const body = req.body;
+  console.log(body);  
   
   // Connecion with database sql
   const myIp = req.ip

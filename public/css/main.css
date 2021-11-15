@@ -446,7 +446,7 @@ input {
 /* ==========================================================================
    #CARD
    ========================================================================== */
-.card {
+.cards {
   overflow: hidden;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -454,20 +454,20 @@ input {
   background: #fff;
 }
 
-.card-1 {
+.card-123 {
   -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
-.card-1 .card-heading {
+.card-123 .card-header {
   background: url("../images/0001.jpg") center center/cover no-repeat;
   padding-top: 140px;
   max-width: 60%;
   margin: 0 auto;
 }
 
-.card-1 .card-body {
+.card-123 .card-bodies {
   padding: 0 90px;
   padding-top: 55px;
   padding-bottom: 65px;
@@ -490,7 +490,8 @@ input {
   height: 1.25em;
   border: 2px solid #d8e4e2;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 5px;
+  margin-left: 30px;
   box-sizing: border-box;
   padding: 2px;
 }
@@ -511,7 +512,7 @@ input {
 }
 
 @media (max-width: 767px) {
-  .card-1 .card-body {
+  .card-123 .card-bodies {
     padding: 0 40px;
     padding-top: 40px;
     padding-bottom: 40px;

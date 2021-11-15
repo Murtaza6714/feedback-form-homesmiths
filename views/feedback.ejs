@@ -38,16 +38,29 @@
       rel="stylesheet"
       media="all"
     />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"
-        integrity="sha512-DNeDhsl+FWnx5B1EQzsayHMyP6Xl/Mg+vcnFPXGNjUZrW28hQaa1+A4qL9M+AiOMmkAhKAWYHh1a+t6qxthzUw=="
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
-        integrity="sha512-yye/u0ehQsrVrfSd6biT17t39Rg9kNc+vENcCXZuMz2a+LWFGvXUnYuWUW6pbfYj1jcBb/C39UZw2ciQvwDDvg=="
-        crossorigin="anonymous" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
-        integrity="sha512-BNZ1x39RMH+UYylOW419beaGO0wqdSkO7pi1rYDYco9OL3uvXaC/GTqA5O4CVK2j4K9ZkoDNSSHVkEQKkgwdiw=="
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"
+      integrity="sha512-DNeDhsl+FWnx5B1EQzsayHMyP6Xl/Mg+vcnFPXGNjUZrW28hQaa1+A4qL9M+AiOMmkAhKAWYHh1a+t6qxthzUw=="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
+      integrity="sha512-yye/u0ehQsrVrfSd6biT17t39Rg9kNc+vENcCXZuMz2a+LWFGvXUnYuWUW6pbfYj1jcBb/C39UZw2ciQvwDDvg=="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+      integrity="sha512-BNZ1x39RMH+UYylOW419beaGO0wqdSkO7pi1rYDYco9OL3uvXaC/GTqA5O4CVK2j4K9ZkoDNSSHVkEQKkgwdiw=="
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Main CSS-->
     <link href="/css/main.css" rel="stylesheet" media="all" />
@@ -65,308 +78,307 @@
   <body>
     <!-- <div class="page-wrapper bg-grey p-t-100 p-b-100 font-robo"> -->
     <div class="wrapper wrapper--w680">
-      <div class="card card-1">
-        <div class="card-heading"></div>
-        <div class="card-body">
+      <div class="cards card-123">
+        <div class="card-header"></div>
+        <div class="card-bodies">
           <!-- <h2 class="title">Registration Info</h2> -->
-          <div style="text-align: left; margin-bottom: 20px; margin-top: -60px">
+          <div style="text-align: left; margin-bottom: 20px; margin-top: -45px">
             <em>Dear valued customer,</em><br />
-            <em>Thank you for choosing Homesmiths.</em
-            ><br />
+            <em>Thank you for choosing Homesmiths.</em><br />
             <em>We'd love to know a bit more about your experience with us.</em>
           </div>
 
           <form method="POST">
             <div class="input-group">
-              <input
-                class="input--style-1"
-                type="text"
-                placeholder="NAME"
-                name="name"
-                required
-              />
+              <input class="input--style-1" type="text" placeholder="NAME" name="name" required />
             </div>
             <div class="input-group">
-              <input
-                class="input--style-1"
-                type="text"
-                placeholder="PHONE"
-                name="mobileNo"
-                id="phone"
-                required
-              />
+              <input class="input--style-1" type="text" placeholder="PHONE" name="mobileNo" id="phone" required />
             </div>
             <div class="input-group">
-              <input
-                class="input--style-1"
-                type="email"
-                placeholder="EMAIL"
-                name="email"
-                required
-              />
+              <input class="input--style-1" type="email" placeholder="EMAIL" name="email" required />
             </div>
-            <h3 class="title">Products</h3>
             <div>
               <p>1. How would describe your experience in our store?</p>
-              <br /><label for="experienceBadly" class="radio">
-                <input
-                  type="radio"
-                  value="Badly"
-                  name="experience"
-                  id="experienceBadly"
-                  class="radio__input"
-                  required
-                />
-                <div class="radio__radio"></div>
-                Badly
-              </label>
               <br />
-              <label for="experienceFine" class="radio">
-                <input
-                  type="radio"
-                  value="Fine"
-                  name="experience"
-                  id="experienceFine"
-                  class="radio__input"
-                />
-                <div class="radio__radio"></div>
-                Fine
-              </label>
-              <br /><label for="experienceGreat" class="radio">
-                <input
-                  type="radio"
-                  value="Great"
-                  name="experience"
-                  id="experienceGreat"
-                  class="radio__input"
-                />
-                <div class="radio__radio"></div>
-                Great
-              </label>
-              <br /><label for="experienceLifeSaving" class="radio">
-                <input
-                  type="radio"
-                  value="Life Saving"
-                  name="experience"
-                  id="experienceLifeSaving"
-                  class="radio__input"
-                />
-                <div class="radio__radio"></div>
-                Life Saving
-              </label>
-              <br />
+              <div class="form-check-inline">
+                <label for="experience0" class="radio">
+                  <input type="radio" value="0" name="experience" id="experience0" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  0
+                </label>
+                <label for="experience1" class="radio">
+                  <input type="radio" value="1" name="experience" id="experience1" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  1
+                </label>
+                <br />
+                <label for="experience2" class="radio">
+                  <input type="radio" value="2" name="experience" id="experience2" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  2
+                </label>
+                <br /><label for="experience3" class="radio">
+                  <input type="radio" value="3" name="experience" id="experience3" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  3
+                </label>
+                <br /><label for="experience4" class="radio">
+                  <input type="radio" value="4" name="experience" id="experience4" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  4
+                </label>
+                <br /><label for="experience5" class="radio">
+                  <input type="radio" value="5" name="experience" id="experience5" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  5
+                </label>
+                <br />
+              </div>
+              <div class="form-check-inline">
+                <p
+                  style="
+                    margin-left: 15px;
+                    font-size: small;
+                    color: rgb(168, 165, 177);
+                  "
+                >
+                  Negative
+                </p>
+                <p
+                  style="
+                    margin-left: 255px;
+                    font-size: small;
+                    color: rgb(168, 165, 177);
+                  "
+                >
+                  Positive
+                </p>
+              </div>
             </div>
             <br />
             <hr />
             <br />
-            <div>
-              <p>2. How well does our product meet your needs?</p>
-              <br /><label for="needsBadly" class="radio">
-                <input
-                  type="radio"
-                  value="Badly"
-                  name="needs"
-                  id="needsBadly"
-                  class="radio__input"
-                  required
-                />
-                <div class="radio__radio"></div>
-                Badly
-              </label>
-              <br />
-              <label for="needsFine" class="radio">
-                <input
-                  type="radio"
-                  value="Fine"
-                  name="needs"
-                  id="needsFine"
-                  class="radio__input"
-                />
-                <div class="radio__radio"></div>
-                Fine
-              </label>
-              <br /><label for="needsGreat" class="radio">
-                <input
-                  type="radio"
-                  value="Great"
-                  name="needs"
-                  id="needsGreat"
-                  class="radio__input"
-                />
-                <div class="radio__radio"></div>
-                Great
-              </label>
-              <br /><label for="needsVeryWell" class="radio">
-                <input
-                  type="radio"
-                  value="Very Well"
-                  name="needs"
-                  id="needsVeryWell"
-                  class="radio__input"
-                />
-                <div class="radio__radio"></div>
-                Very Well
-              </label>
-              <br />
-            </div>
-            <br />
-            <hr />
-            <br />
-
             <div>
               <p>
-                3. How easy was it for you to find the products you wanted in
-                our shop?
+                2. How easy was it for you to locate the products you desired?
               </p>
-              <br /><label for="findBadly" class="radio">
-                <input
-                  type="radio"
-                  value="Badly"
-                  name="find"
-                  id="findBadly"
-                  class="radio__input"
-                  required
-                />
-                <div class="radio__radio"></div>
-                Badly
-              </label>
               <br />
-              <label for="findFine" class="radio">
-                <input
-                  type="radio"
-                  value="Fine"
-                  name="find"
-                  id="findFine"
-                  class="radio__input"
-                />
-                <div class="radio__radio"></div>
-                Fine
-              </label>
-              <br /><label for="findGreat" class="radio">
-                <input
-                  type="radio"
-                  value="Easy"
-                  name="find"
-                  id="findGreat"
-                  class="radio__input"
-                />
-                <div class="radio__radio"></div>
-                Easy
-              </label>
-              <br /><label for="findVeryEasy" class="radio">
-                <input
-                  type="radio"
-                  value="Very Easy"
-                  name="find"
-                  id="findVeryEasy"
-                  class="radio__input"
-                />
-                <div class="radio__radio"></div>
-                Very Easy
-              </label>
+              <div class="form-check-inline">
+                <br /><label for="easy0" class="radio">
+                  <input type="radio" value="0" name="easy" id="easy0" class="radio__input" required
+                  />
+                  <div class="radio__radio"></div>
+                  0
+                </label>
+                <br />
+                <label for="easy1" class="radio">
+                  <input type="radio" value="1" name="easy" id="easy1" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  1
+                </label>
+                <br /><label for="easy2" class="radio">
+                  <input type="radio" value="2" name="easy" id="easy2" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  2
+                </label>
+                <br /><label for="easy3" class="radio">
+                  <input type="radio" value="3" name="easy" id="easy3" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  3
+                </label>
+                <label for="easy4" class="radio">
+                  <input type="radio" value="4" name="easy" id="easy4" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  4
+                </label>
+                <label for="easy5" class="radio">
+                  <input type="radio" value="5" name="easy" id="easy5" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  5
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <p style=" margin-left: 0px; font-size: small; color: rgb(168, 165, 177); ">Extremely Difficult </p>
+                <p style=" margin-left: 212px; font-size: small; color: rgb(168, 165, 177);">Very Easy</p>
+              </div>
               <br />
+            </div>
+            <br />
+            <hr />
+            <br />
+            <div>
+              <p>3. How would you rate our staff on:</p>
+              <br />
+              <div style="margin-left: 10px"><p>a. Attitude:</p></div>
+
+              <div class="form-check-inline">
+                <br /><label for="attitude0" class="radio">
+                  <input type="radio" value="0" name="attitude" id="attitude0" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  0
+                </label>
+                <br />
+                <label for="attitude1" class="radio">
+                  <input type="radio" value="1" name="attitude" id="attitude1" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  1
+                </label>
+                <br /><label for="attitude2" class="radio">
+                  <input type="radio" value="Easy" name="attitude" id="attitude2" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  2
+                </label>
+                <br /><label for="attitude3" class="radio">
+                  <input type="radio" value="3" name="attitude" id="attitude3" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  3
+                </label>
+                <label for="attitude4" class="radio">
+                  <input type="radio" value="4" name="attitude" id="attitude4" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  4
+                </label>
+                <label for="attitude5" class="radio">
+                  <input type="radio" value="5" name="attitude" id="attitude5" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  5
+                </label>
+                <br />
+              </div>
+              <div class="form-check-inline">
+                <p style=" margin-left: 4px; font-size: small; color: rgb(168, 165, 177); ">Extremely Poor</p>
+                <p style=" margin-left: 227px; font-size: small; color: rgb(168, 165, 177); ">Excellent</p>
+              </div>
+              <br /><br />
+
+              <div style="margin-left: 10px"><p>b. Helpfulness:</p></div>
+              <div class="form-check-inline">
+                <br /><label for="helpfulness0" class="radio">
+                  <input type="radio" value="0" name="helpfulness" id="helpfulness0" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  0
+                </label>
+                <br />
+                <label for="helpfulness1" class="radio">
+                  <input type="radio" value="1" name="helpfulness" id="helpfulness1" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  1
+                </label>
+                <br /><label for="helpfulness2" class="radio">
+                  <input type="radio" value="Easy" name="helpfulness" id="helpfulness2" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  2
+                </label>
+                <br /><label for="helpfulness3" class="radio">
+                  <input type="radio" value="3" name="helpfulness" id="helpfulness3" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  3
+                </label>
+                <label for="helpfulness4" class="radio">
+                  <input type="radio" value="4" name="helpfulness" id="helpfulness4" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  4
+                </label>
+                <label for="helpfulness5" class="radio">
+                  <input type="radio" value="5" name="helpfulness" id="helpfulness5" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  5
+                </label>
+                <br />
+              </div>
+              <div class="form-check-inline">
+                <p
+                  style="
+                    margin-left: 4px;
+                    font-size: small;
+                    color: rgb(168, 165, 177);
+                  "
+                >
+                  Extremely Poor
+                </p>
+                <p
+                  style="
+                    margin-left: 227px;
+                    font-size: small;
+                    color: rgb(168, 165, 177);
+                  "
+                >
+                  Excellent
+                </p>
+              </div>
+              <br /><br />
+
+              <div style="margin-left: 10px">
+                <p>c. Product Information:</p>
+              </div>
+              <div class="form-check-inline">
+                <br /><label for="productInformation0" class="radio">
+                  <input type="radio" value="0" name="productInformation" id="productInformation0" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  0
+                </label>
+                <br />
+                <label for="productInformation1" class="radio">
+                  <input type="radio" value="1" name="productInformation" id="productInformation1" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  1
+                </label>
+                <br /><label for="productInformation2" class="radio">
+                  <input type="radio" value="Easy" name="productInformation" id="productInformation2" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  2
+                </label>
+                <br /><label for="productInformation3" class="radio">
+                  <input type="radio" value="3" name="productInformation" id="productInformation3" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  3
+                </label>
+                <label for="productInformation4" class="radio">
+                  <input type="radio" value="4" name="productInformation" id="productInformation4" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  4
+                </label>
+                <label for="productInformation5" class="radio">
+                  <input type="radio" value="5" name="productInformation" id="productInformation5" class="radio__input" required />
+                  <div class="radio__radio"></div>
+                  5
+                </label>
+                <br />
+              </div>
+              <div class="form-check-inline">
+                <p
+                  style="
+                    margin-left: 4px;
+                    font-size: small;
+                    color: rgb(168, 165, 177);
+                  "
+                >
+                  Extremely Poor
+                </p>
+                <p
+                  style="
+                    margin-left: 227px;
+                    font-size: small;
+                    color: rgb(168, 165, 177);
+                  "
+                >
+                  Excellent
+                </p>
+              </div>
+              <br /><br />
             </div>
             <br />
             <hr />
             <br />
 
             <div>
-              <p>
-                4. Were our store staff friendly, helpful and knowledgeable?
-              </p>
-              <br /><label for="friendlyYes" class="radio">
-                <input
-                  type="radio"
-                  value="Yes"
-                  name="friendly"
-                  id="friendlyYes"
-                  class="radio__input"
-                  required
-                />
-                <div class="radio__radio"></div>
-                Yes
-              </label>
+              <p>4. Any additional comments you would like to make?</p>
               <br />
-              <label for="friendlyNo" class="radio">
-                <input
-                  type="radio"
-                  value="No"
-                  name="friendly"
-                  id="friendlyNo"
-                  class="radio__input"
-                />
-                <div class="radio__radio"></div>
-                No
-              </label>
-              <br />
-            </div>
-            <br />
-            <hr />
-            <br />
-
-            <div>
-              <p>
-                5. How would you rate our ability to satisfactorily deal with
-                customer questions?
-              </p>
-              <br /><label for="abilityPoor" class="radio">
-                <input
-                  type="radio"
-                  value="Poor"
-                  name="ability"
-                  id="abilityPoor"
-                  class="radio__input"
-                  required
-                />
-                <div class="radio__radio"></div>
-                Poor
-              </label>
-              <br />
-              <label for="abilitySomewhatPoor" class="radio">
-                <input
-                  type="radio"
-                  value="Somewhat Poor"
-                  name="ability"
-                  id="abilitySomewhatPoor"
-                  class="radio__input"
-                />
-                <div class="radio__radio"></div>
-                Somewhat Poor
-              </label>
-              <br /><label for="abilityExcellent" class="radio">
-                <input
-                  type="radio"
-                  value="Excellent"
-                  name="ability"
-                  id="abilityExcellent"
-                  class="radio__input"
-                />
-                <div class="radio__radio"></div>
-                Excellent
-              </label>
-              <br /><label for="abilityVeryExcellent" class="radio">
-                <input
-                  type="radio"
-                  value="Very Excellent"
-                  name="ability"
-                  id="abilityVeryExcellent"
-                  class="radio__input"
-                />
-                <div class="radio__radio"></div>
-                Very Excellent
-              </label>
-              <br />
-            </div>
-            <br>
-            <hr>
-            <br>
-
-            <div>
-              <p>
-                6. Any Comments?
-              </p><br>
               <textarea name="remarks" id="" cols="65" rows="3"></textarea>
             </div>
+            <input type="hidden" name="phone_code" id="phone_code" />
+            <input type="hidden" name="phone_number" id="phone_number" />
 
             <div class="p-t-20">
               <button class="btn btn--radius btn--green" type="submit">
@@ -377,31 +389,49 @@
         </div>
       </div>
     </div>
-    <input type="hidden" name="hidden" id="hid">
     <!-- </div> -->
-
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- Jquery JS-->
     <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Vendor JS-->
     <script src="/vendor/select2/select2.min.js"></script>
     <script src="/vendor/datepicker/moment.min.js"></script>
     <script src="/vendor/datepicker/daterangepicker.js"></script>
 
     <!-- Main JS-->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
     <script src="/js/global.js"></script>
     <script>
+      var full_number = 0;
       var input = document.querySelector("#phone");
-    window.intlTelInput(input, {
-      preferredCountries: ["ae" ,"us", "in"],
+      var phone = input;
+      var phone_code = window.intlTelInput(input, {
+        preferredCountries: ["ae", "us", "in"],
         separateDialCode: true,
-        customPlaceholder: function (
-            selectedCountryPlaceholder,
-            selectedCountryData
-        ) {
-          console.log(selectedCountryPlaceholder, selectedCountryData);
-            document.getElementById("hid").value = selectedCountryPlaceholder
-        },
-    });
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      });
+      $("form").submit(function () {
+        full_number = phone_code.getSelectedCountryData();
+        $("input[name='phone_code']").val(full_number.dialCode);
+        $("input[name='phone_number']").val(phone.value);
+      });
     </script>
   </body>
   <!-- This templates was made by Colorlib (https://colorlib.com) -->
