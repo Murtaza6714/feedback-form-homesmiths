@@ -4,13 +4,13 @@ const path = require("path");
 const app = express();
 const { config } = require("./config");
 var Connection = require("tedious").Connection;
-// const axios = require("axios");
+const axios = require("axios");
 require("dotenv").config();
 const inputParameters = require('./inputParameters')
 const  { getDateTime } = require('./dateTime');
 const { log } = require("console");
 let port = process.env.PORT || 3000
-7
+
 app.set("view engine", "ejs");
 app.set("views", "views");
 
@@ -32,10 +32,26 @@ app.get("/homesmiths-feedback-form", (req, res, next) => {
 
 app.post("/homesmiths-feedback-form", async (req, res, next) => {
   const body = req.body;
-  console.log(body);  
+  // console.log(body);  
+   
+  // var options = {
+  //   method: 'GET',
+  //   url: 'https://ip-geolocation-ipwhois-io.p.rapidapi.com/json/',
+  //   headers: {
+  //     'x-rapidapi-host': 'ip-geolocation-ipwhois-io.p.rapidapi.com',
+  //     'x-rapidapi-key': '5e0fa2a35cmshb4c9b03ef4bb696p18f0bfjsn29c4986be97b'
+  //   }
+  // };
+  
+  // axios.request(options).then(function (response) {
+  //   console.log(response.data);
+  // }).catch(function (error) {
+  //   console.error(error);
+  // });
   
   // Connecion with database sql
   const myIp = req.ip
+  console.log(myIp.toString() == '::1');
   const dateTimeNow = await getDateTime(new Date())
   var connection = new Connection(config);
   connection.on("connect", async function (err) {

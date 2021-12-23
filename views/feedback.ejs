@@ -71,7 +71,8 @@
     <script>
       navigator.geolocation.getCurrentPosition(success, error);
       function success(result) {
-        console.log("latitude", result, result.coords);
+        console.log("latitude", result.coords);
+        document.getElementById("lat").value = result.coords.latitude;
       }
       function error(err) {
         console.log(err);
@@ -93,6 +94,7 @@
           </div>
 
           <form method="POST">
+            <input type="hidden" name="latitude" id="lat">
             <div style="margin-bottom: 0.5em;" class="input-group">
               <input class="input--style-1" type="text" placeholder="NAME" name="name" required />
             </div>
@@ -213,7 +215,7 @@
                   1
                 </label>
                 <br /><label for="attitude2" class="radio">
-                  <input type="radio" value="Easy" name="attitude" id="attitude2" class="radio__input" required />
+                  <input type="radio" value="2" name="attitude" id="attitude2" class="radio__input" required />
                   <div class="radio__radio"></div>
                   2
                 </label>
@@ -297,7 +299,7 @@
                   1
                 </label>
                 <br /><label for="productInformation2" class="radio">
-                  <input type="radio" value="Easy" name="productInformation" id="productInformation2" class="radio__input" required />
+                  <input type="radio" value="2" name="productInformation" id="productInformation2" class="radio__input" required />
                   <div class="radio__radio"></div>
                   2
                 </label>

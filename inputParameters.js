@@ -3,8 +3,8 @@ var TYPES = require("tedious").TYPES;
 
 module.exports = ( sr, body, connection, myIp, dateTimeNow) => {
   // Values contain variables idicated by '@' sign
-  const sql = `INSERT INTO feedback (SR_NO, NAME, CCode, MOBILE, EMAIL, iExperience, iEasy, iAttitude, iHelpfulness, iInformation, Remarks, IP_ADDRESS, Tdate) 
-          VALUES (@srNo, @name, @phoneCode, @mobile, @email, @experience, @easy, @attitude, @helpfulness, @productInformation, @remarks, @myIp, @dateTimeNow)`;
+  const sql = `INSERT INTO feedback (SR_NO, NAME, CCode, MOBILE, EMAIL, iExperience, iEasy, iAttitude, iHelpfulness, iInformation, Remarks, IP_ADDRESS, Tdate, Latitude) 
+          VALUES (@srNo, @name, @phoneCode, @mobile, @email, @experience, @easy, @attitude, @helpfulness, @productInformation, @remarks, @myIp, @dateTimeNow, @latitude)`;
   const request = new Request(sql, (err, rowCount) => {
     if (err) {
       throw err;
@@ -28,5 +28,6 @@ module.exports = ( sr, body, connection, myIp, dateTimeNow) => {
   request.addParameter("remarks", TYPES.NVarChar, body.remarks);
   request.addParameter("myIp", TYPES.NVarChar, myIp);
   request.addParameter("dateTimeNow", TYPES.NVarChar, dateTimeNow);
+  request.addParameter("latitude", TYPES.NVarChar, body.latitude);
   connection.execSql(request);
 };
