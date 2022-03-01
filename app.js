@@ -51,7 +51,6 @@ app.post("/homesmiths-feedback-form", async (req, res, next) => {
   
   // Connecion with database sql
   const myIp = req.ip
-  console.log(myIp.toString() == '::1');
   const dateTimeNow = await getDateTime(new Date())
   var connection = new Connection(config);
   connection.on("connect", async function (err) {
